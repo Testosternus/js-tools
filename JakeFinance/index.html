@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Jonathan Boydens">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Finances</title>
+</head>
+
+<body>
+  <div class="box">
+    <input type="text" placeholder="new" name="newBox"><span>units</span>
+    <input type="text" placeholder="new price" name="newPriceBox"><span>£</span>
+    <input type="text" placeholder="original" name="orgBox"><span>units</span>
+    <input type="text" placeholder="original price" name="orgPriceBox"><span>£</span>
+    <input type="text" placeholder="result" name="outBox" readonly><span>%</span>
+    <input type="text" placeholder="result price" name="outPriceBox" readonly><span>%</span>
+    <button type="submit" name="btnCalc">calc</button>
+    <input type="text" name="txtElast" id="RES" readonly><span></span>
+    <div id="checkDIV"></div>
+  </div>
+  <div class="box" id="varBox">
+    <div class="selContainer">
+      <span>data type:</span>
+      <select name="selVar" required>
+        <option value="sample" selected>sample</option>
+        <option value="population">population</option>
+      </select>
+    </div>
+    <span>data:</span>
+    <textarea cols="20" rows="4" placeholder="enter data separated with comma" name="dataBox"></textarea>
+    <button type="submit" name="btnVarience">calc</button>
+    <span>variance:</span>
+    <input type="text" name="txtVarience" readonly>
+  </div>
+  <footer>copyright Jonathan Boydens &copy; 2018 for educational purposes only.</footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
